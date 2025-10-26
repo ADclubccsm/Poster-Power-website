@@ -1,0 +1,139 @@
+
+    /* 🌟 Default styles (Desktop First Approach) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #E9A14C;
+}
+
+/* Navbar */
+.navbar {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background: #007BFF;
+}
+
+/* Mobile Navbar */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        width: 90%;
+        text-align: center;
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+/* Marquee */
+marquee {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Content Container */
+.container {
+    width: 50%;
+    margin: 70px auto;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    line-height: 1.7;
+}
+
+/* Center Title */
+.container h1 {
+    text-align: center;
+}
+
+/* Justify Paragraph */
+.container p {
+    text-align: justify;
+}
+
+/* Responsive Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    margin: 10px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+/* Mobile Button Styles */
+@media screen and (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 90%;
+        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 40px;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+/* Mobile Contact Section */
+@media screen and (max-width: 768px) {
+    .contact {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
